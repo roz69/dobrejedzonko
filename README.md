@@ -6,4 +6,4 @@ Smacznego!
 
 
 
-dziekuje
+dziekuje i dowidzenia
