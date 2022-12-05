@@ -1,6 +1,5 @@
 # dobrejedzonko
 bardzo dobre jedzonko ok
 
-smacznego
-
-mama lukasza
+Smacznego!
+~życzy mama aka stara lukasza
