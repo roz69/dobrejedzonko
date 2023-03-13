@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+
+
+<div class="header">
+  <section class="wrapper">
+    <div class="top">Dobre Jedzonko</div>
+    <div class="bottom" aria-hidden="true">Dobre Jedzonko</div>
+</section>
+</div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu" style="background-image: url({% static '3204892389423.png' %});">
+    <ul class="sidebarMenuInner">
+      <li>DOBRE JEDZONKO <span>Pyszne przepisy</span></li>
+      <li><a href="" target="_blank">Company</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+      <li><a href="" target="_blank">COS</a></li>
+    </ul>
+  </div>
+  <main>
+    <ul class="grid">
+      {% for recipe in recipes %}
+        <li>
+          <figure class="grid__figure">
+            <img src="{{ recipe.photo.url }}" alt="">
+            <figcaption><h2>{{ recipe.dish_name }}</h2></figcaption>
+          </figure>
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+    <footer>
+        &copy; Dobre Jedzonko.
+    </footer>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
