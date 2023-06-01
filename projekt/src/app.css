@@ -1,7 +1,16 @@
 html, body {
-   
+    overflow-x: hidden;
     height: 100%;
 }
+a:link {
+     text-decoration: none; }  
+a:visited {
+    text-decoration: none; }  
+a:hover { 
+    text-decoration: none; }  
+a:active { 
+    text-decoration: none; }
+
 body {
     color: white;
     background: black;
@@ -9,18 +18,6 @@ body {
     margin: 0;
     font-family: 'Varela Round', sans-serif;
 }
-a:link {
-    text-decoration: none; }  
-
-a:visited {
-    text-decoration: none; } 
-
-a:hover {
-    text-decoration: none; } 
-
-a:active {
-    text-decoration: none; }
-
 .header {
     justify-content: center;
     align-items: center;
@@ -35,7 +32,6 @@ a:active {
     height: 60px!important;
     overflow: hidden;
     z-index: 10;
-    text-decoration: none;
 }
 .main {
     margin: 0 auto;
@@ -166,6 +162,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform: rotate(-135deg);
     margin-top: -9px;
 }
+
+
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -215,7 +220,6 @@ figcaption {
 .grid__figure {
     display: grid;
     grid-template-rows: 15em 1fr;
-    overflow: hidden;
 }
 .grid__figure img {
     width: 100%;
@@ -233,6 +237,14 @@ figcaption {
 footer{
     text-align: right;
 }
+
+
+
+
+
+
+
+
   .wrapper {
     display: grid;
     place-content: center;
@@ -333,7 +345,6 @@ input[type='file'] {
     cursor: pointer;
     text-decoration: none;
 }
-
 input[type="checkbox"]:checked ~ #sidebarMenu2 {
     transform: translateX(0);
 }
